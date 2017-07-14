@@ -12,7 +12,11 @@ UNSAFE_MESSAGE = ["I am in trouble.", "I am scared", "I am currently not in a sa
 VALID_ENTITIES = ["safe", "unsafe", "worried"]
 
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
+def home():
+    return render_template('speech.html')
+
+@app.route('/webhook', methods=['POST'])
 def home():
     #message = send_msgs
     #return message
