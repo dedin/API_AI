@@ -14,10 +14,10 @@ VALID_ENTITIES = ["safe", "unsafe", "worried"]
 
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('speech.html')
+    return render_template("speech.html")
 
 @app.route('/webhook', methods=['POST'])
-def home():
+def webhook():
     #message = send_msgs
     #return message
 
