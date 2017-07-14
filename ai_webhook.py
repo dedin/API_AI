@@ -12,9 +12,9 @@ UNSAFE_MESSAGE = ["I am in trouble.", "I am scared", "I am currently not in a sa
 VALID_ENTITIES = ["safe", "unsafe", "worried"]
 
 
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/', methods=['POST'])
 def home():
-    #message = send_msg(word)
+    #message = send_msgs
     #return message
 
     ai_request = request.get_json()
